@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8" />
+  <title>Μετατροπέας Νομισμάτων</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h1>Μετατροπέας Νομισμάτων</h1>
+
+  <div class="converter">
+    <input type="number" id="amount" placeholder="Ποσό" />
+    
+    <select id="fromCurrency">
+      <option value="EUR">Euro (EUR)</option>
+      <option value="USD">US Dollar (USD)</option>
+      <option value="GBP">British Pound (GBP)</option>
+    </select>
+
+    <span> ➜ </span>
+
+    <select id="toCurrency">
+      <option value="EUR">Euro (EUR)</option>
+      <option value="USD">US Dollar (USD)</option>
+      <option value="GBP">British Pound (GBP)</option>
+    </select>
+
+    <button id="convertBtn">Μετατροπή</button>
+
+    <p id="result"></p>
+  </div>
+
+  <h2>Ιστορικό Μετατροπών</h2>
+  <ul id="historyList"></ul>
+
+  <script src="main.js"></script>
+</body>
+</html>
